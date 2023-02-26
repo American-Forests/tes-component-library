@@ -1787,6 +1787,11 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
+"@radix-ui/react-icons@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-icons/-/react-icons-1.2.0.tgz#aec2b19e84a9997617fbbe0863c8e78ee870dbfa"
+  integrity sha512-NqrZxn+Ig6c6MypUt84/Nab9WBFXH75T1mhEhFjPlIYaNkp113pqlo6QdK5r7zb3b7RckDAPgUQACes0aKwcFA==
+
 "@reach/router@^1.2.1":
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/@reach/router/-/router-1.3.4.tgz#d2574b19370a70c80480ed91f3da840136d10f8c"
@@ -2860,6 +2865,13 @@
     qs "^6.10.0"
     regenerator-runtime "^0.13.7"
     resolve-from "^5.0.0"
+
+"@szhsin/react-accordion@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@szhsin/react-accordion/-/react-accordion-1.2.0.tgz#8e52c765bb8830f80e71a53ed39c396b50610068"
+  integrity sha512-aCw3BblvOGzV8Oz7ono6828omWhDB20eyuhtUwdvI/9aIx50L1+v84ynrUUsbdRkUCqmHJ+djN4d8UATG6f4Fg==
+  dependencies:
+    react-transition-state "^2.1.0"
 
 "@testing-library/dom@^8.5.0":
   version "8.20.0"
@@ -11102,6 +11114,11 @@ react-textarea-autosize@^7.1.0:
   dependencies:
     "@babel/runtime" "^7.1.2"
     prop-types "^15.6.0"
+
+react-transition-state@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-transition-state/-/react-transition-state-2.1.0.tgz#e9f33e850b76a98ecf732d93e585fe60568ec19a"
+  integrity sha512-b8ldw2pbZk++XM43vcD4ETaFWlzTsjpUX33CmT8BBPPFYlQ2R50wxcY4ZeJ1TesJYziYZ9/rNPFnyA9tR0iKDw==
 
 react@^16.8.3:
   version "16.14.0"
