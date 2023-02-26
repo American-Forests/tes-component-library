@@ -1,10 +1,5 @@
-import React, { FC, HTMLAttributes } from 'react';
-
-export type ButtonVariants = 'primary' | 'secondary';
-export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
-  text: string;
-  variant?: ButtonVariants;
-}
+import React, { FC } from 'react';
+import { ButtonProps } from './types';
 
 export const Button: FC<ButtonProps> = ({
   text,
