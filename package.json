@@ -42,11 +42,11 @@
   "size-limit": [
     {
       "path": "dist/tes-component-library.cjs.production.min.js",
-      "limit": "10 KB"
+      "limit": "500 ms"
     },
     {
       "path": "dist/tes-component-library.esm.js",
-      "limit": "10 KB"
+      "limit": "500 ms"
     }
   ],
   "devDependencies": {
