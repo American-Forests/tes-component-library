@@ -1,5 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
+import { QuestionMarkIcon } from '@radix-ui/react-icons';
 import { Button, ButtonProps } from '../src';
 
 const meta: Meta = {
@@ -26,3 +27,6 @@ Primary.args = { text: 'Add to scenario', variant: 'primary' };
 
 export const Secondary = Template.bind({});
 Secondary.args = { text: 'Cancel', variant: 'secondary' };
+
+export const WithIcon = Template.bind({});
+WithIcon.args = { Icon: QuestionMarkIcon, variant: 'rounded' };

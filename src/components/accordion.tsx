@@ -1,7 +1,31 @@
 import React, { FC } from 'react';
 import { PlusIcon, MinusIcon, ChevronDownIcon } from '@radix-ui/react-icons';
-import { AccordionProps, AccordionItemType } from './types';
 import { Accordion as AccessibleAccordion, AccordionItem as Item } from "@szhsin/react-accordion";
+
+import { ReactNode } from 'react';
+type AccordionContentVariant = 'primary' | 'secondary';
+type AccordionContentType = 'accordion' | 'list';
+type AccordionContent = {
+  text: string;
+  style?: string;
+}
+
+export interface AccordionItemType {
+  header: string;
+  children: ReactNode;
+  variant?: AccordionContentVariant;
+  type?: AccordionContentType;
+  overview?: string;
+  elements?: AccordionItemType[];
+  content?: AccordionContent[];
+  nested?: Boolean;
+}
+
+export interface AccordionProps {
+  items: AccordionItemType[];
+  variant?: AccordionContentVariant;
+}
+
 
 const AccordionItem: FC<AccordionItemType> = ({ 
   header, 
