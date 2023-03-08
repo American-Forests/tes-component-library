@@ -109,7 +109,6 @@ export default meta;
 
 const Template: Story<AccordionProps> = args => <Accordion {...args} />
 
-
 export const Primary = Template.bind({});
 Primary.args = { items, variant: 'primary' };
 

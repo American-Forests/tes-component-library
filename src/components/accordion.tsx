@@ -12,7 +12,6 @@ type AccordionContent = {
 
 export interface AccordionItemType {
   header: string;
-  children: ReactNode;
   variant?: AccordionContentVariant;
   type?: AccordionContentType;
   overview?: string;
@@ -21,13 +20,14 @@ export interface AccordionItemType {
   nested?: Boolean;
 }
 
+
 export interface AccordionProps {
   items: AccordionItemType[];
   variant?: AccordionContentVariant;
 }
 
 
-const AccordionItem: FC<AccordionItemType> = ({ 
+const AccordionItem: FC<AccordionItemType & {children: ReactNode}> = ({ 
   header, 
   variant, 
   nested,

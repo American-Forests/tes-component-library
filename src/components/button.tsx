@@ -1,6 +1,6 @@
 import React, { HTMLAttributes, FC } from 'react';
 
-type ButtonVariants = 'primary' | 'secondary';
+type ButtonVariants = 'primary' | 'secondary' | 'rounded';
 
 export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   text?: string;
@@ -18,11 +18,12 @@ export const Button: FC<ButtonProps> = ({
   text,
   Icon,
   variant,
+  className,
   ...props
 }) => (
     <button
       {...props}
-      className={`${THEME[variant]} flex flex-row items-center alig-center shadow w-fit transition duration-200 ease-in-out p-3`}
+      className={`${THEME[variant]} flex flex-row items-center alig-center shadow w-fit transition duration-200 ease-in-out p-3 ${className}`}
     >
       {text && <p>{text}</p>}
       {Icon && <Icon/>}
