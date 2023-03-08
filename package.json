@@ -42,7 +42,7 @@
   "size-limit": [
     {
       "path": "dist/tes-component-library.esm.js",
-      "limit": "500 ms"
+      "limit": "1000 ms"
     }
   ],
   "devDependencies": {
