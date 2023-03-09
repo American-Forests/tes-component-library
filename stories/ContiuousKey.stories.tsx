@@ -2,7 +2,7 @@ import React from 'react';
 import { ContinuousKey, ContinuousKeyProps } from '../src';
 
 export default {
-  title: 'Continuous Key',
+  title: 'Components/Continuous Key',
   component: ContinuousKey,
 };
 

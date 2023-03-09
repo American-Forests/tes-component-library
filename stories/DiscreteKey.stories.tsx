@@ -2,7 +2,7 @@ import React from 'react';
 import { DiscreteKey, DiscreteKeyProps } from '../src';
 
 export default {
-  title: 'Discrete Key',
+  title: 'Components/Discrete Key',
   component: DiscreteKey,
 };
 
