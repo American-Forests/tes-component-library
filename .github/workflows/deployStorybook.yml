@@ -17,8 +17,8 @@ jobs:
       
       - name: Install and Build 🔧
         run: |
-          npm install
-          npm run build-storybook
+          yarn install --immutable --immutable-cache --check-cache
+          yarn run build-storybook
         
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
