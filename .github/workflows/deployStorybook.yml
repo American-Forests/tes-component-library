@@ -1,24 +1,24 @@
-name: Build and Publish storybook to GitHub Pages
+name: Build and Publish Storybook to GitHub Pages
 
 on:
   push:
     branches:
-      - "main"
-      
+      - main
+
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-  
+  contents: write
+
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.build-publish.outputs.page_url }}
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - id: build-publish
-      uses: bitovi/github-actions-react-to-ghp@v1.2.0
-      with:
-        path: dist-storybook
-        build_command: npm run build-storybook
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      
+      - name: Install and Build 🔧
+        run: yarn install && yarn run build-storybook
+        
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with: 
+          folder: dist-storybook
